@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0CB5262637A1E800C7D41B /* PlayerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CB5242637A1E800C7D41B /* PlayerCollectionViewCell.swift */; };
+		2D0CB5272637A1E800C7D41B /* PlayerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CB5252637A1E800C7D41B /* PlayerCollectionViewCell.xib */; };
 		2DBC35C32631366B00CCFEC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC35C22631366B00CCFEC0 /* AppDelegate.swift */; };
 		2DBC35C52631366B00CCFEC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC35C42631366B00CCFEC0 /* SceneDelegate.swift */; };
 		2DBC35C72631366B00CCFEC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC35C62631366B00CCFEC0 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0CB5242637A1E800C7D41B /* PlayerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D0CB5252637A1E800C7D41B /* PlayerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCollectionViewCell.xib; sourceTree = "<group>"; };
 		2DBC35BF2631366B00CCFEC0 /* lifecounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBC35C22631366B00CCFEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DBC35C42631366B00CCFEC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				2DBC35CB2631366E00CCFEC0 /* Assets.xcassets */,
 				2DBC35CD2631366E00CCFEC0 /* LaunchScreen.storyboard */,
 				2DBC35D02631366E00CCFEC0 /* Info.plist */,
+				2D0CB5242637A1E800C7D41B /* PlayerCollectionViewCell.swift */,
+				2D0CB5252637A1E800C7D41B /* PlayerCollectionViewCell.xib */,
 			);
 			path = lifecounter;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DBC35CF2631366E00CCFEC0 /* LaunchScreen.storyboard in Resources */,
+				2D0CB5272637A1E800C7D41B /* PlayerCollectionViewCell.xib in Resources */,
 				2DBC35CC2631366E00CCFEC0 /* Assets.xcassets in Resources */,
 				2DBC35CA2631366B00CCFEC0 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DBC35C72631366B00CCFEC0 /* ViewController.swift in Sources */,
+				2D0CB5262637A1E800C7D41B /* PlayerCollectionViewCell.swift in Sources */,
 				2DBC35C32631366B00CCFEC0 /* AppDelegate.swift in Sources */,
 				2DBC35C52631366B00CCFEC0 /* SceneDelegate.swift in Sources */,
 			);
