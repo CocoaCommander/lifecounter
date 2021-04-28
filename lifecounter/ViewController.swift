@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var playerModel = PlayerModel()
+        //var playerModel = PlayerModel()
         
         if let nib = Bundle.main.loadNibNamed("PlayerControls", owner: self),
         let nibView = nib.first as? UIView {
