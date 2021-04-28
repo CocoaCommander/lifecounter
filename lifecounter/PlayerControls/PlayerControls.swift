@@ -8,12 +8,7 @@
 import UIKit
 
 class PlayerControls: UIView {
-    @IBOutlet var controls: UIView!
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        
-    }
+    
+    
     
 }

@@ -16,25 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCV-qv-Sem" userLabel="btnHistory">
-                                <rect key="frame" x="16" y="20" width="50" height="30"/>
-                                <state key="normal" title="History"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsz-mI-nUh" userLabel="btnAddPlayer">
-                                <rect key="frame" x="230" y="20" width="74" height="30"/>
-                                <state key="normal" title="Add Player"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-gB-MwB">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCV-qv-Sem" userLabel="btnHistory">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                        <state key="normal" title="History"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsz-mI-nUh" userLabel="btnAddPlayer">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="30"/>
+                                        <state key="normal" title="Add Player"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qsz-mI-nUh" firstAttribute="top" secondItem="gvV-gB-MwB" secondAttribute="top" id="I1q-6n-mxC"/>
+                                </constraints>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1o-4k-92Q" userLabel="Players">
+                                <rect key="frame" x="40" y="58" width="240" height="422"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="wPU-PC-std"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yNE-un-2yP"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qsz-mI-nUh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="AFL-X5-J0g"/>
-                            <constraint firstItem="qsz-mI-nUh" firstAttribute="leading" secondItem="vCV-qv-Sem" secondAttribute="trailing" constant="164" id="DmJ-Ea-hz6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qsz-mI-nUh" secondAttribute="trailing" constant="16" id="EKc-ja-bLK"/>
-                            <constraint firstItem="vCV-qv-Sem" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FZu-I0-cYB"/>
-                            <constraint firstItem="vCV-qv-Sem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NX2-Wv-lMj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1o-4k-92Q" secondAttribute="trailing" id="0DD-sp-s6F"/>
+                            <constraint firstItem="I1o-4k-92Q" firstAttribute="top" secondItem="gvV-gB-MwB" secondAttribute="bottom" id="ZgH-cR-JmK"/>
+                            <constraint firstItem="gvV-gB-MwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="goB-xM-BIB"/>
+                            <constraint firstItem="I1o-4k-92Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oNv-rF-dZn"/>
+                            <constraint firstItem="gvV-gB-MwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uSi-Wc-f5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I1o-4k-92Q" secondAttribute="bottom" id="vsi-UN-RwE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gvV-gB-MwB" secondAttribute="trailing" id="y90-MM-wzF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Players" destination="I1o-4k-92Q" id="rXB-Dq-Y6W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

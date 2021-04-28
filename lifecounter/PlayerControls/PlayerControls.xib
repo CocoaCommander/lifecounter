@@ -10,6 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="lifecounter" customModuleProvider="target">
             <connections>
+                <outlet property="MinusManyHp" destination="giq-1v-fDh" id="T8b-5U-0hU"/>
+                <outlet property="MinusManyHpEntry" destination="C9y-Cn-MgU" id="aEE-wL-eek"/>
+                <outlet property="MinusOneHP" destination="FjX-8n-ZFI" id="be6-VR-VN6"/>
+                <outlet property="PlayerHP" destination="tmu-en-htu" id="Nyu-dZ-O0b"/>
+                <outlet property="PlayerLabel" destination="WxI-eA-qN8" id="T64-QW-6ht"/>
+                <outlet property="PlusManyHp" destination="syf-BV-FHj" id="BaM-ds-Zcz"/>
+                <outlet property="PlusManyHpEntry" destination="hMb-nw-YUh" id="cGn-d3-njA"/>
+                <outlet property="PlusOneHp" destination="84b-id-dMC" id="piS-A6-R6J"/>
                 <outlet property="controls" destination="iN0-l3-epB" id="Doc-A2-d3A"/>
             </connections>
         </placeholder>
